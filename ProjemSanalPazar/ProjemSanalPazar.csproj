@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{160FD23D-7688-4635-80DF-E08B013E59AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjemSanalPazar</RootNamespace>
+    <AssemblyName>ProjemSanalPazar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formlar\PersonelFormlar\PersonelDepoUrunBilgiEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelDepoUrunBilgiEkran.Designer.cs">
+      <DependentUpon>PersonelDepoUrunBilgiEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelGirisEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelGirisEkran.Designer.cs">
+      <DependentUpon>PersonelGirisEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersoneliletisimEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersoneliletisimEkran.Designer.cs">
+      <DependentUpon>PersoneliletisimEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelSiparislerBilgiEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelSiparislerBilgiEkran.Designer.cs">
+      <DependentUpon>PersonelSiparislerBilgiEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelSistemMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelSistemMenu.Designer.cs">
+      <DependentUpon>PersonelSistemMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelİstatistikBilgileriEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelFormlar\PersonelİstatistikBilgileriEkran.Designer.cs">
+      <DependentUpon>PersonelİstatistikBilgileriEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\AlısverisPaketlerEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\AlısverisPaketlerEkran.Designer.cs">
+      <DependentUpon>AlısverisPaketlerEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\AylıkEkonomikPaketBilgiEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\AylıkEkonomikPaketBilgiEkran.Designer.cs">
+      <DependentUpon>AylıkEkonomikPaketBilgiEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\AylıkStandartPaketBilgiEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\AylıkStandartPaketBilgiEkran.Designer.cs">
+      <DependentUpon>AylıkStandartPaketBilgiEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\GirisEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\GirisEkran.Designer.cs">
+      <DependentUpon>GirisEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\HaftalıkEkonomikPaketEkranBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\HaftalıkEkonomikPaketEkranBilgi.Designer.cs">
+      <DependentUpon>HaftalıkEkonomikPaketEkranBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\HaftalıkStandartPaketEkranBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\HaftalıkStandartPaketEkranBilgi.Designer.cs">
+      <DependentUpon>HaftalıkStandartPaketEkranBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\ParolaUnuttumEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\ParolaUnuttumEkran.Designer.cs">
+      <DependentUpon>ParolaUnuttumEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\TanıtımEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\TanıtımEkran.Designer.cs">
+      <DependentUpon>TanıtımEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeBilgilerEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeBilgilerEkran.Designer.cs">
+      <DependentUpon>UyeBilgilerEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeGirisEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeGirisEkran.Designer.cs">
+      <DependentUpon>UyeGirisEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeKayıtEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeKayıtEkran.Designer.cs">
+      <DependentUpon>UyeKayıtEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeSiparislerimEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeSiparislerimEkran.Designer.cs">
+      <DependentUpon>UyeSiparislerimEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeSistemMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeSistemMenu.Designer.cs">
+      <DependentUpon>UyeSistemMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeİletişimEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\UyeİletişimEkran.Designer.cs">
+      <DependentUpon>UyeİletişimEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\UyeFormlar\VeriTabaniSinifi.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanalPazarSistemiUygulamaOdevDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SanalPazarSistemiUygulamaOdevDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SanalPazarSistemiUygulamaOdevDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SanalPazarSistemiUygulamaOdevDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formlar\PersonelFormlar\PersonelDepoUrunBilgiEkran.resx">
+      <DependentUpon>PersonelDepoUrunBilgiEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\PersonelFormlar\PersonelGirisEkran.resx">
+      <DependentUpon>PersonelGirisEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\PersonelFormlar\PersoneliletisimEkran.resx">
+      <DependentUpon>PersoneliletisimEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\PersonelFormlar\PersonelSiparislerBilgiEkran.resx">
+      <DependentUpon>PersonelSiparislerBilgiEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\PersonelFormlar\PersonelSistemMenu.resx">
+      <DependentUpon>PersonelSistemMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\PersonelFormlar\PersonelİstatistikBilgileriEkran.resx">
+      <DependentUpon>PersonelİstatistikBilgileriEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\AlısverisPaketlerEkran.resx">
+      <DependentUpon>AlısverisPaketlerEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\AylıkEkonomikPaketBilgiEkran.resx">
+      <DependentUpon>AylıkEkonomikPaketBilgiEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\AylıkStandartPaketBilgiEkran.resx">
+      <DependentUpon>AylıkStandartPaketBilgiEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\GirisEkran.resx">
+      <DependentUpon>GirisEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\HaftalıkEkonomikPaketEkranBilgi.resx">
+      <DependentUpon>HaftalıkEkonomikPaketEkranBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\HaftalıkStandartPaketEkranBilgi.resx">
+      <DependentUpon>HaftalıkStandartPaketEkranBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\ParolaUnuttumEkran.resx">
+      <DependentUpon>ParolaUnuttumEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\TanıtımEkran.resx">
+      <DependentUpon>TanıtımEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\UyeBilgilerEkran.resx">
+      <DependentUpon>UyeBilgilerEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\UyeGirisEkran.resx">
+      <DependentUpon>UyeGirisEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\UyeKayıtEkran.resx">
+      <DependentUpon>UyeKayıtEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\UyeSiparislerimEkran.resx">
+      <DependentUpon>UyeSiparislerimEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\UyeSistemMenu.resx">
+      <DependentUpon>UyeSistemMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\UyeFormlar\UyeİletişimEkran.resx">
+      <DependentUpon>UyeİletişimEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SanalPazarSistemiUygulamaOdevDataSet.xsc">
+      <DependentUpon>SanalPazarSistemiUygulamaOdevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SanalPazarSistemiUygulamaOdevDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SanalPazarSistemiUygulamaOdevDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SanalPazarSistemiUygulamaOdevDataSet.xss">
+      <DependentUpon>SanalPazarSistemiUygulamaOdevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SanalPazarSistemiUygulamaOdevDataSet1.xsc">
+      <DependentUpon>SanalPazarSistemiUygulamaOdevDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SanalPazarSistemiUygulamaOdevDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SanalPazarSistemiUygulamaOdevDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SanalPazarSistemiUygulamaOdevDataSet1.xss">
+      <DependentUpon>SanalPazarSistemiUygulamaOdevDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
